@@ -1,0 +1,67 @@
+Categories:
+  - Internet
+  - Science & Education
+License: GPL-3.0-only
+WebSite: https://github.com/android-password-store/Android-Password-Store/wiki
+SourceCode: https://github.com/android-password-store/Android-Password-Store
+IssueTracker: https://github.com/android-password-store/Android-Password-Store/issues
+Translation: https://www.transifex.com/android-password-store/android-password-store/
+Changelog: https://github.com/android-password-store/Android-Password-Store/releases
+Donate: https://opencollective.com/Android-Password-Store
+
+AutoName: Password Store
+Description: |-
+    Simple password manager that is compatible with [http://www.passwordstore.org/
+    pass]: Passwords are stored in simple text files which are encrypted with
+    OpenPGP.
+
+    Requires [[org.sufficientlysecure.keychain]] to encrypt and decrypt passwords.
+
+    '''Features:'''
+
+    * Clone an existing pass repository or start a new one
+    * Create and organize password files
+    * Sync with a remote Git repository
+    * Decrypt and copy passwords
+    * Automatically fill and save credentials in apps and supported browsers
+
+RepoType: git
+Repo: https://github.com/FabianHenneke/Android-Password-Store
+
+Builds:
+  - versionName: 1.5.0
+    versionCode: 10500
+    commit: v1.5.0
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - app/src/androidTest/assets/private_key
+
+  - versionName: 1.6.0
+    versionCode: 10600
+    commit: 61655ecfd35005f134b369a579365f4120468b39
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - app/src/androidTest/assets/private_key
+
+  - versionName: 1.7.0
+    versionCode: 10700
+    commit: v1.7.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.7.1
+    versionCode: 10701
+    commit: v1.7.1
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags v[0-9]+\.[0-9]+\.[0-9]+
+CurrentVersion: 1.7.1
+CurrentVersionCode: 10701

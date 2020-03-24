@@ -9,8 +9,10 @@ Translation: https://www.transifex.com/android-password-store/android-password-s
 Changelog: https://github.com/android-password-store/Android-Password-Store/releases
 Bitcoin: 1H1Z1NPTrR5Cej9bKV3Hu4f5WJZYtkbpox
 
-AutoName: Password Store
+AutoName: Password Store (legacy)
 Description: |-
+    '''This app is no longer maintained. Switch to [[dev.msfjarvis.aps]] to receive updates.'''
+
     Simple password manager that is compatible with [http://www.passwordstore.org/
     pass]: Passwords are stored in simple text files which are encrypted with
     OpenPGP.
@@ -817,6 +819,6 @@ Builds:
       - .gradle
 
 AutoUpdateMode: None
-UpdateCheckMode: None
+UpdateCheckMode: Static
 CurrentVersion: 1.3.3
 CurrentVersionCode: 10303
